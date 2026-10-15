@@ -18,7 +18,7 @@
     "26.1.1-latest": "0.6.27b",
     "26.2-latest": "0.6.27c",
     "26.1.2-latest": "0.6.27b",
-    "26.3-latest": "0.6.27b"
+    "26.3-latest": "0.6.27c"
   },
   "1.20.2": {
     "0.0.0": "1.20.1-forge",
@@ -242,7 +242,8 @@
   "26.3": {
     "0.0.0": "26.2-neoforge",
     "0.6.27a": "26.3 port",
-    "0.6.27b": "Fixed crash with enchanted armor (Closes #1025)\r\nFixed crash with Improved Transparency enabled (Closes #1022)"
+    "0.6.27b": "Fixed crash with enchanted armor (Closes #1025)\r\nFixed crash with Improved Transparency enabled (Closes #1022)",
+    "0.6.27c": "Fixed editor startup crash on NeoForge 26.3.0.53-beta+\r\nMinecraft Forge 26.3 port\r\n26.4 Snapshot 4 port\r\nFixed overflow copy not working on 26.3+ (Closes #1030)"
   },
   "homepage": "https://www.curseforge.com/minecraft/mc-mods/custom-player-models"
 }

@@ -95,8 +95,9 @@
     "26.2-latest": "0.6.27c",
     "26.1.2-latest": "0.6.27b",
     "26.1.2-fabric-latest": "0.6.27b",
-    "26.3-fabric-latest": "0.6.27e",
-    "26.3-latest": "0.6.27b"
+    "26.3-fabric-latest": "0.6.27f",
+    "26.3-latest": "0.6.27a",
+    "26.4-fabric-latest": "0.6.27a"
   },
   "1.12.2": {
     "0.0.5a": "First release",
@@ -2405,11 +2406,16 @@
     "0.6.27b": "Fixed crash on NeoForge 26.2.0.10-beta+\n26.3 Snapshot 5 port",
     "0.6.27c": "26.3 Pre-Release 1 port\r\n\r\nFix issues with Iris Shaders on 26.1+ (Closes #1010)",
     "0.6.27d": "26.3 port",
-    "0.6.27e": "Fixed crash with enchanted armor (Closes #1025)\r\nFixed crash with Improved Transparency enabled (Closes #1022)"
+    "0.6.27e": "Fixed crash with enchanted armor (Closes #1025)\r\nFixed crash with Improved Transparency enabled (Closes #1022)",
+    "0.6.27f": "Fixed editor startup crash on NeoForge 26.3.0.53-beta+\r\nMinecraft Forge 26.3 port\r\n26.4 Snapshot 4 port\r\nFixed overflow copy not working on 26.3+ (Closes #1030)"
   },
   "26.3": {
     "0.0.0": "26.2",
-    "0.6.27a": "26.3 port",
-    "0.6.27b": "Fixed crash with enchanted armor (Closes #1025)\r\nFixed crash with Improved Transparency enabled (Closes #1022)"
+    "0.6.27a": "Fixed editor startup crash on NeoForge 26.3.0.53-beta+\r\nMinecraft Forge 26.3 port\r\n26.4 Snapshot 4 port\r\nFixed overflow copy not working on 26.3+ (Closes #1030)",
+    "0.6.27b": "Fixed crash with enchanted armor (Closes #1025)\r\nFixed crash with Improved Transparency enabled (Closes #1022)",
+    "0.6.27c": "Fixed editor startup crash on NeoForge 26.3.0.53-beta+\r\nMinecraft Forge 26.3 port\r\n26.4 Snapshot 4 port\r\nFixed overflow copy not working on 26.3+ (Closes #1030)"
+  },
+  "26.4-fabric": {
+    "0.6.27a": "Fixed editor startup crash on NeoForge 26.3.0.53-beta+\r\nMinecraft Forge 26.3 port\r\n26.4 Snapshot 4 port\r\nFixed overflow copy not working on 26.3+ (Closes #1030)"
   }
 }

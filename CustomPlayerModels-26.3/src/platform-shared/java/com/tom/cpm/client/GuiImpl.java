@@ -1,6 +1,8 @@
 package com.tom.cpm.client;
 
 import java.io.File;
+import java.lang.foreign.Arena;
+import java.lang.foreign.MemorySegment;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.nio.file.Path;
@@ -9,6 +11,8 @@ import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Supplier;
 import java.util.stream.Collectors;
+
+import org.lwjgl.sdl.SDLClipboard;
 
 import net.minecraft.SharedConstants;
 import net.minecraft.client.ClientBrandRetriever;
@@ -605,7 +609,14 @@ public class GuiImpl extends Screen implements IGui {
 
 	@Override
 	public void setClipboardText(String text) {
-		minecraft.keyboardHandler.setClipboard(text);
+		if (text.length() > 1024) {
+			// Fix for Out of stack space error
+			try (Arena arena = Arena.ofConfined()) {
+				MemorySegment memory = arena.allocateFrom(text);
+				SDLClipboard.nSDL_SetClipboardText(memory.address());
+			}
+		} else
+			minecraft.keyboardHandler.setClipboard(text);
 	}
 
 	@Override
